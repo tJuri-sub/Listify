@@ -1,10 +1,13 @@
+import { Routes, Route } from "react-router-dom";
+import { MainPage } from "./components/mainpage";
+
 function App() {
   return (
-    <>
-      <div>
-        <h1>hello</h1>
-      </div>
-    </>
+    <div>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+      </Routes>
+    </div>
   );
 }
 
