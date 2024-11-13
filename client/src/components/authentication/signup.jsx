@@ -21,7 +21,7 @@ export function Signup() {
   });
 
   // for sending data through api routes to database
-  const signupUser = (req, res) => {
+  const signupUser = (req, res, e) => {
     e.preventDefault();
   };
 

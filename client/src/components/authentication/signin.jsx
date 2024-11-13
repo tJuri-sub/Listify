@@ -18,7 +18,7 @@ export function Signin() {
   });
 
   // for logging in  through api routes
-  const signinUser = (req, res) => {
+  const signinUser = (req, res, e) => {
     e.preventDefault();
   };
 
@@ -52,9 +52,8 @@ export function Signin() {
           </form>
         </CardContent>
         <CardFooter>
-          <span className="text-sm">
-            Don't have an account? <Link to="/">Click here</Link>
-          </span>
+          <p className="text-sm">Dont have an account?</p>
+          <Link to="/">Click here</Link>
         </CardFooter>
       </Card>
     </div>
